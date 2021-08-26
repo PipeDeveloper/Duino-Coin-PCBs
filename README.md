@@ -100,23 +100,30 @@ When you buy an ATmega microcontroller directly from the factory, it comes clean
 To do it you need an SPI to USB interpreter. There are manys. like "USBtinnyISP", "USBasp" or any arduino board (arduino uno, arduino nano, arduino mega, arduino leonardo, etc...)
 
 On the case you use an arduino board, you need to load the example code.
+
 file > examples > 11.  ArduinoISP (and you load that code).
 
-Once you're done, you have to make the wiring (Adapter > your board)
-SCK > SCK
-MISO > MISO
-MOSI > MOSI
-RESET > RESET
+Once you're done, you have to make the wiring
+| Adapter | > | Your Board |
+| ------------- | -- | ------------- |
+| SCK | > | SCK |
+| MISO | > | MISO |
+| MOSI | > | MOSI |
+| RESET | > | RESET |
 
-In case you use an arduino you need to make this wiring (arduino > your board)
-pin 13 > SCK
-pin 12 > MISO
-pin 11 > MOSI
-pin 10 > RESET
+In case you use an arduino you need to make this wiring
+| Aduino | > | Your Board |
+| ------------- | -- | ------------- |
+| pin 13 | > | SCK |
+| pin 12 | > | MISO |
+| pin 11 | > | MOSI |
+| pin 10 | > | RESET |
 
 Also connect
-VCC > 5v
-gnd > GND
+| | | |
+| ------------- | -- | ------------- |
+| VCC | > | 5v |
+| gnd | > | GND |
 
 Once its wiring and connected, plug your adapter or arduino to USB and you should hear a device detected on USB port as COM3, COM4, COM5, etc... (you can check it on device manager)
 
